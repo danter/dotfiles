@@ -11,8 +11,6 @@ end
 
 desc "Install dotfiles."
 task :install do
-  system "git submodule init && git submodule update"
-
   Dir["*"].each do |file|
     source = File.join(Dir.pwd, file)
     basename = File.basename(source)

@@ -1,20 +1,10 @@
 [user]
-	name = Joakim Kolsjö
-        email = joakim.kolsjo@gmail.com
+	email = aspaasplund@gmail.com
+	name = Anders Asplund
 [status]
 	color = auto
 [diff]
 	color = auto
-[alias]
-	standup = shortlog --since=yesterday
-	uncommit = reset --soft HEAD^
-        l = "!source ~/.githelpers && pretty_git_log"
 [push]
 	default = current
-[merge]
-	tool = vimdiff
-
-[mergetool "vimdiff"]
-	cmd = vim -d "$LOCAL" "$MERGED" "$REMOTE"
-	trustExitCode = true
 
